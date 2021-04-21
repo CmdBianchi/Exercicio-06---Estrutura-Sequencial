@@ -7,8 +7,7 @@ namespace Exercício_06____Estrutura_Sequencial
 
         /// -------> START / MAIN 
         /////////////////////////////////////////////////////////////////////////////////////////////
-        static void Main(string[] args)
-        {
+        static void Main(string[] args){
             double a, b, c;
             Msg();
             Console.WriteLine(" ");
@@ -18,21 +17,47 @@ namespace Exercício_06____Estrutura_Sequencial
             b = double.Parse(Console.ReadLine());
             Console.Write("Digite o valor do lado C: ");
             c = double.Parse(Console.ReadLine());
-            Equation(10, 5, 4);
+            Console.WriteLine("Área do Triângulo: " + EquationTriangulo(a, b, c));
+            ;
         }
         /// -------> FUNCTIONS
         /////////////////////////////////////////////////////////////////////////////////////////////
-        static void Msg()
-        {
+        static void Msg(){
             Console.WriteLine("Calcule e mostre a área das figuras geométricas.");
         }
         /*------------------------------------------------------------------------------------------*/
-        static double Equation(double a, double b, double c)
-        {
+        static double EquationTriangulo(double a, double b, double c){
             double area;
-            area = a;
+            area = (a * b) / 2;
             return area;
-
         }
+        /*------------------------------------------------------------------------------------------*/
+        static double EquationRetangulo(double a, double b, double c){
+            double area;
+            area = (a * b) / 2;
+            return area;
+        }
+        /*------------------------------------------------------------------------------------------*/
+        static double EquationCirculo(double a, double b, double c){
+            double area;
+            area = (a * b) / 2;
+            return area;
+        }
+        /*------------------------------------------------------------------------------------------*/
+        static double EquationTrapezio(double a, double b, double c){
+            double area;
+            area = (a * b) / 2;
+            return area;
+        }
+        /*------------------------------------------------------------------------------------------*/
+        static double EquationQuadrado(double a, double b, double c){
+            double area;
+            area = (a * b) / 2;
+            return area;
+        }
+        /////////////////////////////////////////////////////////////////////////////////////////////
+        /// -------> END
+
+
     }
-    }
+}
