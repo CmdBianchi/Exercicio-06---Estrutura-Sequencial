@@ -17,8 +17,15 @@ namespace Exercício_06____Estrutura_Sequencial
             b = double.Parse(Console.ReadLine());
             Console.Write("Digite o valor do lado C: ");
             c = double.Parse(Console.ReadLine());
-            Console.WriteLine("Área do Triângulo: " + EquationTriangulo(a, b, c));
-            ;
+            Console.Write("Área do Triângulo: " + EquationTriangulo(a, b, c).ToString("F2"));
+            Console.WriteLine(" ");
+            Console.Write("Área do Retangulo: " + EquationRetangulo(a, b, c).ToString("F2"));
+            Console.WriteLine(" ");
+            Console.Write("Área do Circulo: " + EquationCirculo(a, b, c).ToString("F2"));
+            Console.WriteLine(" ");
+            Console.Write("Área do Trapezio: " + EquationTrapezio(a, b, c).ToString("F2"));
+            Console.WriteLine(" ");
+            Console.Write("Área do Quadrado: " + EquationQuadrado(a, b, c).ToString("F2"));
         }
         /// -------> FUNCTIONS
         /////////////////////////////////////////////////////////////////////////////////////////////
@@ -28,31 +35,31 @@ namespace Exercício_06____Estrutura_Sequencial
         /*------------------------------------------------------------------------------------------*/
         static double EquationTriangulo(double a, double b, double c){
             double area;
-            area = (a * b) / 2;
+            area = (a * c) / 2;
             return area;
         }
         /*------------------------------------------------------------------------------------------*/
         static double EquationRetangulo(double a, double b, double c){
             double area;
-            area = (a * b) / 2;
+            area = (a * b);
             return area;
         }
         /*------------------------------------------------------------------------------------------*/
         static double EquationCirculo(double a, double b, double c){
-            double area;
-            area = (a * b) / 2;
+            double area, pi=3.14159;
+            area = pi * 0.5 * (c * c);
             return area;
         }
         /*------------------------------------------------------------------------------------------*/
         static double EquationTrapezio(double a, double b, double c){
             double area;
-            area = (a * b) / 2;
+            area = c*((a + b) / 2);
             return area;
         }
         /*------------------------------------------------------------------------------------------*/
         static double EquationQuadrado(double a, double b, double c){
             double area;
-            area = (a * b) / 2;
+            area = (b * b);
             return area;
         }
         /////////////////////////////////////////////////////////////////////////////////////////////
